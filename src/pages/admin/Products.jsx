@@ -58,8 +58,6 @@ const Products = () => {
                                                             <hr />
                                                             <div className="card-body">
                                                                 <h5 className="card-title">{p.name}</h5>
-                                                                <p className="card-text">{p.description}
-                                                                </p>
 
                                                             </div>
                                                         </div>
