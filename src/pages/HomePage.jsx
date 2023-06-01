@@ -153,7 +153,7 @@ const HomePage = () => {
                         {products?.map((p) => {
                             return (
                                 <div className='card home-card' key={p._id}>
-                                    <img src={`https://ecommerce-app-backend-ygsw.onrender.com/api/v1/product/product-photo/${p._id}`} className="card-img-top" alt="..." />
+                                    <img src={`https://ecommerce-app-backend-ygsw.onrender.com/api/v1/product/product-photo/${p._id}`} className="card-img-top mt-3" alt="..." />
                                     <hr />
                                     <div className="card-body">
                                         <h5 className="card-title">
