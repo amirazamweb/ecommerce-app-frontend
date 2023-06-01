@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 1.5px solid grey;
+  color: black !important;
+}
+
+.navbar-brand {
+  width: 13%;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+/* ========footer=========== */
+
+.footer {
+  background: black;
+  background-image: linear-gradient(to right, rgb(82, 81, 81), black);
+  background-image: -webkit linear-gradient(to right, rgb(82, 81, 81), black);
+  padding: 1px;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========== products page */
+
+.product-link {
+  text-decoration: none;
+  color: gray !important;
+}
+
+/* ===== card container */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* =========home-card========== */
+
+.home-card h5 {
+  margin-top: -15px;
+  color: #0a3d62;
+}
+
+.home-card img {
+  transition: all 1s;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.home-card:hover img {
+  transform: scale(1.06);
+}
+
+.home-card button {
+  font-size: 0.8rem;
+  border-style: none;
+  font-weight: 400;
+  padding: 9px 10px;
+  border-radius: 2px;
+}
+
+.home-card button:first-of-type {
+  background-color: #f9ca24;
+  color: brown;
+}
+
+.home-card button:last-of-type {
+  background-color: #6ab04c;
+  float: right;
+  color: #fff;
+}
+
+/* =======page loader spinner===========
+====================================== */
+.loader-container {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  border-width: 3px 2px 3px 2px;
+  border-style: solid dotted solid dotted;
+  border-color: #de3500 rgba(231, 133, 133, 0.3) #1b8a11 rgba(145, 233, 133, 0.3);
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: 1s rotate linear infinite;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color: #1b8a11;
+  transform: translate(-10px, 19px) rotate(-35deg);
+}
+
+.loader:after {
+  border-color: #de3500 #0000 #0000 #0000;
+  transform: translate(32px, 3px) rotate(-35deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg)
+  }
+}
