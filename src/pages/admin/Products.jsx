@@ -57,7 +57,7 @@ const Products = () => {
                                                             <img src={`${process.env.REACT_APP_BACKEND_URL}/api/v1/product/product-photo/${p._id}`} className="card-img-top" alt="..." />
                                                             <hr />
                                                             <div className="card-body">
-                                                                <h5 className="card-title">{p.name}</h5>
+                                                                <h5 className="card-title">{p.name.length > 16 ? `${p.name.substring(0, 16)}...` : p.name}</h5>
 
                                                             </div>
                                                         </div>
